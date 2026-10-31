@@ -1,0 +1,14 @@
+/* Styles for the new dashboard components.
+   Kept separate from index.css so the original design file stays untouched. */
+
+/* API status badge (top bar) */
+.status-badge {
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.18s, color 0.18s;
+}
+.status-badge:hover { border-color: #4a4e59; color: #fff; }
+.status-badge.is-online > span { background: #56c78b; }
+.status-badge.is-offline > span { background: #ff514b; }
+.status-badge.is-offline { color: #ff8a85; border-color: #5a2a2a; }
+.status-badge.is-checking > span { background: #e5b35a; }

@@ -1,4 +1,3 @@
-
 import { useMemo, useState } from "react";
 import {
   Activity,
@@ -24,6 +23,8 @@ import {
   CartesianGrid,
 } from "recharts";
 import "./index.css";
+import "./styles/panels.css";
+import ApiStatusBadge from "./components/ApiStatusBadge";
 
 const drivers = [
   { code: "VER", name: "Max Verstappen", team: "Red Bull", color: "#4788ef", avg: 89.42 },
@@ -194,9 +195,7 @@ export default function App() {
           </div>
 
           <div className="topbar-right">
-            <span className="data-badge">
-              <span /> DEMO DATA
-            </span>
+            <ApiStatusBadge />
           </div>
         </header>
 
